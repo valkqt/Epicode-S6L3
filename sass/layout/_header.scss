@@ -1,0 +1,44 @@
+@import "../mixins.scss";
+@import "../vars.scss";
+
+header img {
+    max-height: 60px;
+    padding: $spacing-md;
+}
+
+header .image-container {
+    background-color: #f4f4f4;
+    border-radius: 100%
+}
+
+header {
+    @include flexContainer(row, flex-start, center, nowrap);
+}
+
+
+nav {
+    @include flexContainer(row, space-between, center, nowrap);
+    background-color: $bgColor;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: $spacing-sm;
+
+
+}
+
+
+header p {
+    padding: $spacing-sm
+}
+
+
+nav ul {
+    list-style: none;
+    padding-right: $spacing-md
+}
+
+nav li {
+    display: inline;
+    padding: $spacing-sm
+}

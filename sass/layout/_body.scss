@@ -1,0 +1,46 @@
+main {
+  background-color: $bgColor;
+}
+
+
+section {
+  @include flexContainer(row, space-around, flex-start, nowrap);
+  position:relative;
+  padding: $spacing-md;
+  width: 66.6666%;
+  margin: 7rem auto 0 auto;
+}
+
+.intro-text {
+    position: relative;
+    opacity: 1;
+    top: 0;
+    @include animation(0.5, 0, 44)
+}
+
+.cover {
+    position:relative;
+    top: 4.5rem;
+    z-index: 5;
+    border: 3px solid rgb(150, 0, 150);
+    border-radius: $spacing-sm;
+    box-shadow: $spacing-md $spacing-xl $spacing-xl rgba(0, 0, 0, 0.399);
+    opacity: 1;
+
+    @include animation(0.5, 0.11, 4.5);
+
+}
+
+#gallery {
+    @include flexContainer(row, center, center, wrap, $spacing-lg);
+    width: 100%;
+}
+
+#gallery img {
+    max-width: 20%;
+    border-radius: $spacing-sm;
+    opacity: 1;
+    @include animation(0.5, 0.33  , 4.5);
+
+
+}
