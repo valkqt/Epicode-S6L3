@@ -7,7 +7,7 @@
     gap: $gap
 }
 
-@mixin animation($duration, $delay:0, $position, $name) {
+@mixin animation($duration, $delay:0, $name) {
 
 
         animation-name: $name;
@@ -24,7 +24,6 @@
     }
     100% {
         opacity: 1;
-        top: $position;
 
     }
 }
