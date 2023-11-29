@@ -5,10 +5,10 @@ body {
 }
 
 h1 {
-    font-size: 5rem;
-    margin: $verticalMargin;
+    @include fontProperties(5, bold, 1.2);
+    margin: $spacing-md 0;
 }
 
 p {
-    margin: $verticalMargin
+    margin: $spacing-md 0;
 }
